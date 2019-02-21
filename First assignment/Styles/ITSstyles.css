@@ -11,6 +11,7 @@ html {
     box-sizing: inherit;
 }
 
+/* Body code with gif as background so that it looks like space */
 body {
     font-family: 'Times New Roman', sans-serif;
     margin: 0;
@@ -32,6 +33,7 @@ h2 {
     font-family: 'Aldrich', sans-serif;
 }
 
+/* Design for the time display */
 .timeDesign {
     font-family: 'Aldrich', cursive;
     font-size: 60px;
@@ -41,6 +43,7 @@ h2 {
     margin-top: -15px;
 }
 
+/* Design for the crew pictures*/
 .crew-img {
     width: 180px;
     height: 180px;
@@ -50,6 +53,7 @@ h2 {
     margin-right: 10px;
 }
 
+/* Makes sure the information below the pictures is displayed in the right place*/
 .info {
     width: 180px;
     float: left;
@@ -57,6 +61,8 @@ h2 {
     font-family: 'Aldrich', cursive;
 }
 
+/* Next three pieces of CSS are the same because I needed them in different places to do different things */
+/* Design for the health reserve bar */
 .reserveBar {
     background-color: chartreuse;
     text-align: center;
@@ -69,6 +75,7 @@ h2 {
     margin-right: auto;
 }
 
+/* Design for the hunger bar */
 .reserveBarTwo {
     background-color: chartreuse;
     text-align: center;
@@ -81,6 +88,7 @@ h2 {
     margin-right: auto;
 }
 
+/* Design for the thirst bar */
 .reserveBarThree {
     background-color: chartreuse;
     text-align: center;
@@ -93,6 +101,7 @@ h2 {
     margin-right: auto;
 }
 
+/* Content wrapper for the whole  body of the site */
 .content-wrap {
     max-width: 1550px;
     margin: 0 auto;
@@ -100,22 +109,24 @@ h2 {
     overflow: hidden;
 }
 
+/* Does exactly what the title says: it aligns the text the way I want it to be aligned */
 .alignText {
     text-align: center;
     font-family: 'Aldrich', cursive;
 }
 
+/* Design for the alert that shows how many crew members are still alive */
 .makeAlert {
     text-align: center;
     font-size: 50px;
     font-family: 'Aldrich', cursive;
 }
 
+/* Makes the background */
 .background {
     background-color: #303443;
     background-size: cover;
     margin: 0px;
-
     /*
     border-style: solid;
     border-width: medium;
@@ -126,16 +137,19 @@ h2 {
     */
 }
 
+
 .center-text {
     text-align: center;
     font-size: 30px;
     padding-top: 20px;
 }
 
+/* Adds padding where needed */
 .extraPadding {
     padding-bottom: 13px;
 }
 
+/* Next couple blocks are used for the two buttons, which include focus and hover states */
 #foodButton {
     display: block;
     margin-left: auto;
@@ -144,7 +158,6 @@ h2 {
     border: 1px;
     padding: 3px;
 }
-
 #waterButton {
     display: block;
     margin-left: auto;
@@ -153,7 +166,6 @@ h2 {
     border: 1px;
     padding: 3px;
 }
-
 #foodButton:focus {
     outline-style: none;
 }
@@ -171,6 +183,7 @@ h2 {
     border: #03D5FE;
 }
 
+/* Design for the images of the buttons that are used */
 .imgDesign {
     width: 40px;
     height: 40px;
@@ -192,9 +205,7 @@ h2 {
     margin-top: -50px;
 }
 
-header h1,
-header h2 {
-    color: powderblue;
+header h1 {
     margin: 0;
 }
 
@@ -204,15 +215,6 @@ header {
     padding-top: 50px;
     position: relative;
 }
-
-/* Footer styles only */
-footer {
-    text-align: center;
-    font-family: 'Arial', cursive;
-}
-
-/* Pictures
-------------------------------------*/
 
 /* Media Queries
 ------------------------------------*/
@@ -240,13 +242,3 @@ footer {
     }
 }
 
-@media (max-width: 899px) {
-    header {
-        text-align: center;
-    }
-
-    .profile-img {
-        width: 150px;
-        height: 150px;
-    }
-}

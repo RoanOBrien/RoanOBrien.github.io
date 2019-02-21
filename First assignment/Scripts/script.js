@@ -1,5 +1,6 @@
 alert("Welcome aboard the I.T.S. Enterprise!")
 
+//makes an object that is applied to all the crew members
 function CrewMember(name, health, hunger, thirst) {
     this.name = name;
     this.health = health;
@@ -12,6 +13,7 @@ var spock = new CrewMember("Spock", 100, 0, 0);
 var uhura = new CrewMember("Uhura", 100, 0, 0);
 var scotty = new CrewMember("Scotty", 100, 0, 0);
 
+//array of crew is used later when checking health, hunger and thirst statusses
 var crew = [kirk, spock, uhura, scotty];
 console.log(crew.length);
 
@@ -45,7 +47,7 @@ function time() {
 
 time();
 
-//function that displays and changes 
+//function that displays and changes the bars when button is clicked
 function changeBars() {
     barWidthPercentage = barWidthPercentage - 0.5;
     barWidth = barWidth - 1.5;
@@ -150,6 +152,7 @@ function changeBars() {
     }
 }
 
+//adds a "0" to the minutes and seconds so the time is displayed in a constant way
 function checkTime(i) {
     if (i < 10) {
         i = "0" + i;
@@ -157,6 +160,7 @@ function checkTime(i) {
     return i;
 }
 
+//displays the statusses of the crew members, also alters the statusses
 function displayStatus() {
     kirk.health = Math.round((kirk.health - 0.5) * 100) / 100;
     kirk.hunger = Math.round((kirk.hunger + 5) * 100) / 100;
@@ -183,6 +187,7 @@ function displayStatus() {
     document.getElementById("scotty").innerHTML = "<BR/>Name: " + scotty.name + "<BR/><BR/> Health status: " + scotty.health + "%" + "<BR/><BR/> Hunger: " + scotty.hunger + "%" + "<BR/><BR/> Thirst: " + scotty.thirst + "%";
 }
 
+//function that checks whether the crewmembers are still alive and displays how many are alive
 function checkLife() {
     var j = 0;
 
@@ -212,12 +217,4 @@ function checkLife() {
     if (x == 0) {
         document.getElementById("crewAlive").innerHTML = "</BR></BR></BR></BR></BR>" + " Your crew is dead! Chances of survival: 0 %";
     }
-}
-
-document.getElementById("foodButton").onclick = function () {
-    alert("cuuuul");
-}
-
-document.getElementById("waterButton").onclick = function () {
-    alert("even cuuuuler");
 }

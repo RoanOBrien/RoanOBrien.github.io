@@ -5,28 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ITS Operating System</title>
-
     <link rel="stylesheet" href="Styles/ITSstyles.css">
     <link href="https://fonts.googleapis.com/css?family=Aldrich|Orbitron|ZCOOL+QingKe+HuangYou" rel="stylesheet">
 </head>
 
 <body>
+    <!-- Header with title of the page -->
     <header>
         <h1 class="header">ITS Operating System</h1>
     </header>
 
     <main class="content-wrap">
+        
+        <!-- Makes the left side of the screen, with the time and the reserves -->
         <section class="column-narrow">
+            
+            <!-- This sections is for the display of the current time -->
             <div class="background">
                 <h2 class="center-text">CURRENT TIME</h2>
                 <p id="time" class="timeDesign extraPadding"></p>
             </div>
+            
+            <!-- This section is for the display of the reserves -->
             <div class="background extraPadding">
                 <h2 class="center-text">RESERVES</h2>
                 <div>
                     <p class="alignText">Medicine left: </p>
                     <p class="reserveBar" id="barReserves"></p>
                 </div>
+                <!-- Food and water reserves have a top-up function -->
                 <div>
                     <p class="alignText">Food reserves left:</p>
                     <p class="reserveBarTwo" id="foodReserves"></p>
@@ -39,15 +46,18 @@
                 </div>
             </div>
         </section>
-
+        
+<!-- Makes the right side of the screen, with the crew members and the status displays -->
         <section class="column-wide background">
             <div>
                 <h2 class="center-text">CREW</h2>
+                <!-- Displays the pictures -->
                 <img class="crew-img" src="Images/kirk.jpg">
                 <img class="crew-img" src="Images/spock.jpg">
                 <img class="crew-img" src="Images/uhura.jpg">
                 <img class="crew-img" src="Images/scotty.jpg">
-
+                
+                <!-- Displays the information of the crew members -->
                 <div class="info" id="kirk">
                 </div>
                 <div class="info" id="spock">
@@ -57,6 +67,7 @@
                 <div class="info" id="scotty">
                 </div>
             </div>
+            <!-- Makes the message that shows how many crew members are alive -->
             <div class="makeAlert" id="crewAlive">
                 <p class="makeAlert"></p>
             </div>
@@ -65,6 +76,7 @@
 
     <footer>
     </footer>
+    <!-- Runs the actual script -->
     <script src="Scripts/script.js"></script>
 </body>
 
