@@ -1,0 +1,147 @@
+/* Global styles 
+------------------------------------*/
+/* border box fix */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Times New Roman', sans-serif;
+    margin: 0;
+    color: cadetblue;
+}
+
+h1 {
+    font-size: 90px;
+    font-weight: 600px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+h2 {
+    font-size: 40px;
+    margin-top: 0;
+    font-weight: 400px;
+    font-family: 'Aldrich', sans-serif;
+}
+
+.timeDesign {
+    font-family: 'Aldrich', cursive;
+    font-size: 60px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.crew-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    float: left;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.info {
+    width: 180px;
+    float: left;
+    margin-left: 42px;
+    padding-right: 20px;
+    font-family: 'Aldrich', cursive;
+}
+
+.pic-right {
+    width: 50%;
+}
+
+.pic-left {
+    width: 50%;
+    float: left;
+}
+
+.reserveBar {
+    background-color: chartreuse;
+    text-align: center;
+    
+    height: 25px;
+    padding-top: 4px;
+    padding-right: 50px;
+}
+
+
+/* Header & Footer 
+------------------------------------*/
+.header {
+    background: midnightblue;
+    color: white;
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 30px;
+    margin-top: -50px;
+}
+
+footer {
+    background: Darkcyan;
+    color: powderblue;
+}
+
+header h1,
+header h2 {
+    color: #EDF2F4;
+    margin: 0;
+}
+
+.center-text {
+    text-align: center;
+    font-size: 30px;
+}
+
+/* Header styles only 
+------------------------------------*/
+header {
+    padding-top: 50px;
+    position: relative;
+}
+
+/* Footer styles only */
+footer {
+    text-align: center;
+    font-family: 'Arial', cursive;
+}
+
+/* Pictures
+------------------------------------*/
+
+/* Media Queries
+------------------------------------*/
+@media (min-width: 900px) {
+
+    .column-narrow {
+        width: 40%;
+        float: left;
+        min-height: 150px;
+        padding-top: 50px;
+    }
+
+    .column-wide {
+        width: 60%;
+        float: left;
+        min-height: 300px;
+        padding-top: 50px;
+    }
+}
+
+@media (max-width: 899px) {
+    header {
+        text-align: center;
+    }
+
+    .profile-img {
+        width: 150px;
+        height: 150px;
+    }
+}

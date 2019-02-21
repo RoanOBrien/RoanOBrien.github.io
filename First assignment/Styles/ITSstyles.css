@@ -1,0 +1,252 @@
+/* Global styles 
+------------------------------------*/
+/* border box fix */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Times New Roman', sans-serif;
+    margin: 0;
+    color: #03D5FE;
+    background: url(../Images/stars.gif);
+    text-shadow: 0 0 5px #03D5FE;
+}
+
+h1 {
+    font-size: 90px;
+    font-weight: 600px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+h2 {
+    font-size: 40px;
+    margin-top: 0;
+    font-weight: 400px;
+    font-family: 'Aldrich', sans-serif;
+}
+
+.timeDesign {
+    font-family: 'Aldrich', cursive;
+    font-size: 60px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 35px;
+    margin-top: -15px;
+}
+
+.crew-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.info {
+    width: 180px;
+    float: left;
+    margin-left: 20px;
+    font-family: 'Aldrich', cursive;
+}
+
+.reserveBar {
+    background-color: chartreuse;
+    text-align: center;
+    height: 25px;
+    padding-top: 4px;
+    font-family: 'Aldrich', cursive;
+    border-radius: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.reserveBarTwo {
+    background-color: chartreuse;
+    text-align: center;
+    height: 25px;
+    padding-top: 4px;
+    font-family: 'Aldrich', cursive;
+    border-radius: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.reserveBarThree {
+    background-color: chartreuse;
+    text-align: center;
+    height: 25px;
+    padding-top: 4px;
+    font-family: 'Aldrich', cursive;
+    border-radius: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content-wrap {
+    max-width: 1550px;
+    margin: 0 auto;
+    padding: 0px 50px;
+    overflow: hidden;
+}
+
+.alignText {
+    text-align: center;
+    font-family: 'Aldrich', cursive;
+}
+
+.makeAlert {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Aldrich', cursive;
+}
+
+.background {
+    background-color: #303443;
+    background-size: cover;
+    margin: 0px;
+
+    /*
+    border-style: solid;
+    border-width: medium;
+    border-color: #00edff;
+    box-shadow: 0px 0px 10px 4px #00edff;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    */
+}
+
+.center-text {
+    text-align: center;
+    font-size: 30px;
+    padding-top: 20px;
+}
+
+.extraPadding {
+    padding-bottom: 13px;
+}
+
+#foodButton {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: transparent;
+    border: 1px;
+    padding: 3px;
+}
+
+#waterButton {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: transparent;
+    border: 1px;
+    padding: 3px;
+}
+
+#foodButton:focus {
+    outline-style: none;
+}
+#foodButton:hover {
+    box-shadow: 0 0 6px 2px #03D5FE;
+    border-radius: 50%;
+    border: #03D5FE;
+}
+#waterButton:focus {
+    outline-style: none;
+}
+#waterButton:hover {
+    box-shadow: 0 0 6px 2px #03D5FE;
+    border-radius: 50%;
+    border: #03D5FE;
+}
+
+.imgDesign {
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    background-color: #303443;
+}
+
+/* Header & Footer 
+------------------------------------*/
+.header {
+    background: #303443;
+    color: #03D5FE;
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 20px;
+    margin-top: -50px;
+}
+
+header h1,
+header h2 {
+    color: powderblue;
+    margin: 0;
+}
+
+/* Header styles only 
+------------------------------------*/
+header {
+    padding-top: 50px;
+    position: relative;
+}
+
+/* Footer styles only */
+footer {
+    text-align: center;
+    font-family: 'Arial', cursive;
+}
+
+/* Pictures
+------------------------------------*/
+
+/* Media Queries
+------------------------------------*/
+@media (min-width: 900px) {
+
+    .column-narrow {
+        width: 30%;
+        float: left;
+        min-height: 150px;
+        padding-top: 50px;
+        margin-left: 40px;
+        margin-bottom: 60px;
+    }
+
+    .column-wide {
+        width: 60%;
+        float: left;
+        min-height: 300px;
+
+        margin-top: 50px;
+        padding-bottom: 20px;
+        padding-left: 10px;
+        margin-left: 40px;
+        margin-bottom: 60px;
+    }
+}
+
+@media (max-width: 899px) {
+    header {
+        text-align: center;
+    }
+
+    .profile-img {
+        width: 150px;
+        height: 150px;
+    }
+}

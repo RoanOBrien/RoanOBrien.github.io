@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITS Operating System</title>
+
+    <link rel="stylesheet" href="Styles/ITSstyles.css">
+    <link href="https://fonts.googleapis.com/css?family=Aldrich|Orbitron|ZCOOL+QingKe+HuangYou" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1 class="header">ITS Operating System</h1>
+    </header>
+
+    <main class="content-wrap">
+        <section class="column-narrow">
+            <div class="background">
+                <h2 class="center-text">CURRENT TIME</h2>
+                <p id="time" class="timeDesign extraPadding"></p>
+            </div>
+            <div class="background extraPadding">
+                <h2 class="center-text">RESERVES</h2>
+                <div>
+                    <p class="alignText">Medicine left: </p>
+                    <p class="reserveBar" id="barReserves"></p>
+                </div>
+                <div>
+                    <p class="alignText">Food reserves left:</p>
+                    <p class="reserveBarTwo" id="foodReserves"></p>
+                    <button id="foodButton"><img src="Images/feedCrew.png" class="imgDesign"></button>
+                </div>
+                <div class="extraPadding">
+                    <p class="alignText">Water reserves:</p>
+                    <p class="reserveBarThree" id="waterReserves"></p>
+                    <button id="waterButton"><img src="Images/water.png" class="imgDesign"></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="column-wide background">
+            <div>
+                <h2 class="center-text">CREW</h2>
+                <img class="crew-img" src="Images/kirk.jpg">
+                <img class="crew-img" src="Images/spock.jpg">
+                <img class="crew-img" src="Images/uhura.jpg">
+                <img class="crew-img" src="Images/scotty.jpg">
+
+                <div class="info" id="kirk">
+                </div>
+                <div class="info" id="spock">
+                </div>
+                <div class="info" id="uhura">
+                </div>
+                <div class="info" id="scotty">
+                </div>
+            </div>
+            <div class="makeAlert" id="crewAlive">
+                <p class="makeAlert"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+    </footer>
+    <script src="Scripts/script.js"></script>
+</body>
+
+</html>
