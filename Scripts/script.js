@@ -40,15 +40,20 @@ function time() {
     document.getElementById("time").innerHTML = hours + ":" + minutes + ":" + seconds;
     setTimeout(time, 1000);
 
-    changeBars();
+    changeHealthBar();
+    changeFoodBar();
+    changeWaterBar();
+    healthDecreaser();
+    changeStatus();
     displayStatus();
     checkLife();
+    displayFatality();
 }
 
 time();
 
-//function that displays and changes the bars when button is clicked
-function changeBars() {
+//function that displays and changes the health bar according to the time elapsed
+function changeHealthBar() {
     barWidthPercentage = barWidthPercentage - 0.5;
     barWidth = barWidth - 1.5;
 
@@ -71,7 +76,10 @@ function changeBars() {
         document.querySelector(".reserveBar").style.backgroundColor = "#303443";
         counter = 1;
     }
+}
 
+//function that displays and changes the food bar when button is clicked
+function changeFoodBar() {
     document.getElementById("foodButton").onclick = function () {
         barWidthFood = barWidthFood - 30;
         foodAmount = foodAmount - 20;
@@ -105,7 +113,10 @@ function changeBars() {
         document.querySelector(".reserveBarTwo").style.backgroundColor = "#303443";
         counterTwo = 1;
     }
+}
 
+//function that displays and changes the water bar when button is clicked
+function changeWaterBar(){
     document.getElementById("waterButton").onclick = function () {
         barWidthWater = barWidthWater - 15;
         waterAmount = waterAmount - 15;
@@ -139,7 +150,10 @@ function changeBars() {
         document.querySelector(".reserveBarThree").style.backgroundColor = "#303443";
         counterThree = 1;
     }
+}
 
+//function that decreases the health of the crew members incrementally depending on their hunger and thirst
+function healthDecreaser(){
     for (var z = 0; z < 4; z++) {
         if (crew[z].hunger > 100) {
             crew[z].hunger = 100;
@@ -161,7 +175,7 @@ function checkTime(i) {
 }
 
 //displays the statusses of the crew members, also alters the statusses
-function displayStatus() {
+function changeStatus() {
     kirk.health = Math.round((kirk.health - 0.5) * 100) / 100;
     kirk.hunger = Math.round((kirk.hunger + 5) * 100) / 100;
     kirk.thirst = Math.round((kirk.thirst + 2.5) * 100) / 100;
@@ -177,7 +191,10 @@ function displayStatus() {
     scotty.health = Math.round((scotty.health - 0.5) * 100) / 100;
     scotty.hunger = Math.round((scotty.hunger + 3) * 100) / 100;
     scotty.thirst = Math.round((scotty.thirst + 5) * 100) / 100;
+}
 
+//displays the status of the crew members' health, hunger and thirst
+function displayStatus() {
     document.getElementById("kirk").innerHTML = "<BR/>Name: " + kirk.name + "<BR/><BR/> Health status: " + kirk.health + "%" + "<BR/><BR/> Hunger: " + kirk.hunger + "%" + "<BR/><BR/> Thirst: " + kirk.thirst + "%";
 
     document.getElementById("spock").innerHTML = "<BR/>Name: " + spock.name + "<BR/><BR/> Health status: " + spock.health + "%" + "<BR/><BR/> Hunger: " + spock.hunger + "%" + "<BR/><BR/> Thirst: " + spock.thirst + "%";
@@ -209,7 +226,10 @@ function checkLife() {
             j++;
         }
     }
+}
 
+//displays the message that says how many crew members are still alive
+function displayFatality() {
     var x = 4 - j;
     if (x > 0) {
         document.getElementById("crewAlive").innerHTML = "</BR></BR></BR></BR></BR></BR>" + x + " crewmember(s) are still alive!";

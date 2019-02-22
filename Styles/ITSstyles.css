@@ -158,6 +158,7 @@ h2 {
     border: 1px;
     padding: 3px;
 }
+
 #waterButton {
     display: block;
     margin-left: auto;
@@ -166,17 +167,21 @@ h2 {
     border: 1px;
     padding: 3px;
 }
+
 #foodButton:focus {
     outline-style: none;
 }
+
 #foodButton:hover {
     box-shadow: 0 0 6px 2px #03D5FE;
     border-radius: 50%;
     border: #03D5FE;
 }
+
 #waterButton:focus {
     outline-style: none;
 }
+
 #waterButton:hover {
     box-shadow: 0 0 6px 2px #03D5FE;
     border-radius: 50%;
@@ -241,4 +246,3 @@ header {
         margin-bottom: 60px;
     }
 }
-
