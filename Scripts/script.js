@@ -227,11 +227,8 @@ var j = 0;
             j++;
         }
     }
-    displayFatality();
-}
-
-//displays the message that says how many crew members are still alive
-function displayFatality() {
+    
+    //displays the message that says how many crew members are still alive
     var x = 4 - j;
     if (x > 0) {
         document.getElementById("crewAlive").innerHTML = "</BR></BR></BR></BR></BR></BR>" + x + " crewmember(s) are still alive!";
