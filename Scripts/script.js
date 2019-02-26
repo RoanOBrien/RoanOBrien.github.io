@@ -26,6 +26,7 @@ var waterAmount = 300;
 var counter = 0;
 var counterTwo = 0;
 var counterThree = 0;
+var j = 0;
 
 //function that tracks the time and displays it, also makes the rest of the functions run
 function time() {
@@ -206,7 +207,6 @@ function displayStatus() {
 
 //function that checks whether the crewmembers are still alive and displays how many are alive
 function checkLife() {
-    var j = 0;
 
     if (uhura.health <= 0 || kirk.health <= 0 || spock.health <= 0 || scotty.health <= 0) {
         if (uhura.health <= 0) {
