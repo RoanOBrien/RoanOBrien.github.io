@@ -47,7 +47,7 @@ function time() {
     changeStatus();
     displayStatus();
     checkLife();
-    displayFatality();
+    
 }
 
 time();
@@ -226,6 +226,7 @@ function checkLife() {
             j++;
         }
     }
+    displayFatality();
 }
 
 //displays the message that says how many crew members are still alive
